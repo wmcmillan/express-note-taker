@@ -2,8 +2,8 @@
 const fs = require("fs");
 
 //set variables
-let dbData = fs.readFileSync("./db/db.json","utf8");
-dbData = JSON.parse(dbData);
+let db = fs.readFileSync("./db/db.json","utf8");
+dbData = JSON.parse(db);
 console.log(dbData);
 
 //export routing
